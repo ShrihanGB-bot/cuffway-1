@@ -43,6 +43,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/news" className="text-muted-foreground hover:text-primary transition-colors">
+                  News
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                   Contact
                 </Link>
