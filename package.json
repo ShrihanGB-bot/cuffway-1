@@ -1,6 +1,6 @@
 
   {
-      "name": "Startup Medical Device Landing Page",
+    "name": "cuffway-landing",
       "version": "0.1.0",
       "private": true,
       "dependencies": {

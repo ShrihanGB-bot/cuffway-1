@@ -1,7 +1,7 @@
 
-  # Startup Medical Device Landing Page
+  # CuffWay | Smart Support for Respiratory Recovery
 
-  This is a code bundle for Startup Medical Device Landing Page. The original project is available at https://www.figma.com/design/npcNihpphohkMese6IBcou/Startup-Medical-Device-Landing-Page.
+  This is the CuffWay landing page code bundle. The original design inspiration is available at https://www.figma.com/design/npcNihpphohkMese6IBcou/Startup-Medical-Device-Landing-Page.
 
   ## Running the code
 
