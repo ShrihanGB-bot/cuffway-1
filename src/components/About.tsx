@@ -7,7 +7,7 @@ import teamPhoto from "figma:asset/c5bedde63d061db03dfd4be97cf878e3a24f21ac.png"
 export function About() {
   const teamMembers = [
     {
-      name: "Shrihan Ganesh Babu!",
+      name: "Shrihan Ganesh Babu",
       role: "Co-Founder; CEO",
       description: "Second-year biochemistry student at the University of South Carolina",
       image: "https://i.imgur.com/xgqC8GZ.jpeg",
