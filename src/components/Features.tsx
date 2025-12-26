@@ -69,7 +69,7 @@ export function Features() {
                   Smart Cuff Pressure Monitoring System
                 </h2>
                 <p className="text-white/90 mb-6">
-                  CuffWay provides constant pressure monitoring that adjusts based on patient inhalation and exhalation. The system provides notifications if values set by clinicians are exceeded or fall below safe thresholds.
+                  CuffWay provides constant pressure monitoring that adjusts based on patient data. The system provides notifications if values set by clinicians are exceeded or fall below safe thresholds.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
