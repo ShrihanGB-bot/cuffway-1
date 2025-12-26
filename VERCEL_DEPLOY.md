@@ -19,6 +19,10 @@ Notes and troubleshooting:
 Environment variables:
 - Add any API keys or runtime variables in Project Settings > Environment Variables.
 
+Contact form (Google Apps Script):
+- Set a Vercel environment variable named `VITE_GOOGLE_SCRIPT_URL` with the Web App URL you get after deploying the Google Apps Script (see `src/GOOGLE_APPS_SCRIPT_SETUP.md`).
+- This will be available in the client as `import.meta.env.VITE_GOOGLE_SCRIPT_URL`.
+
 Local validation:
 - npm install
 - npm run build

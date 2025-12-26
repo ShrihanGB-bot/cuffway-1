@@ -79,8 +79,8 @@ function doPost(e) {
 
 // Optional: Function to send email notifications
 function sendEmailNotification(data) {
-  // Replace with your email address
-  const YOUR_EMAIL = 'your-email@example.com';
+  // Replace with the recipient email address (example: send notifications to the site owner)
+  const YOUR_EMAIL = 'gb.shrihan@gmail.com';
   
   const subject = `New Contact Form Submission from ${data.firstName} ${data.lastName}`;
   
@@ -141,6 +141,7 @@ function doGet(e) {
 3. Replace the URL with your new Web app URL from Step 4
 
 ```typescript
+// It's recommended to expose this URL via a Vite env var named `VITE_GOOGLE_SCRIPT_URL`
 const GOOGLE_SCRIPT_URL = "YOUR_WEB_APP_URL_HERE";
 ```
 

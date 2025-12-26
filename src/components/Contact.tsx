@@ -26,16 +26,42 @@ export function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      organization: "",
-      message: "",
-    });
-    alert("Thank you for your message. We'll get back to you soon!");
+
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw-St0LJ4Q5xncC0__PuygjyiQbp3VwFFp8QkVg3TfXNHf9wTZfKn3qoxKszWrNsWDR/exec";
+
+    try {
+      if (!GOOGLE_SCRIPT_URL) throw new Error('Contact form endpoint not configured');
+
+      // send as form-encoded data to be compatible with Google Apps Script
+      const body = new URLSearchParams();
+      body.append('timestamp', new Date().toISOString());
+      Object.entries(formData).forEach(([key, value]) => body.append(key, value || ''));
+
+      // Google Apps Script often requires mode: 'no-cors' from client side. We still POST and rely on GAS to record the submission.
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        },
+        body: body.toString(),
+      });
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        organization: "",
+        message: "",
+      });
+
+      alert("Thank you for your message. We'll get back to you soon!");
+    } catch (err: any) {
+      console.error('Contact submit failed', err);
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
   return (
