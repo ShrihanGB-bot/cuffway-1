@@ -69,7 +69,7 @@ export function Features() {
                   Smart Cuff Pressure Monitoring System
                 </h2>
                 <p className="text-white/90 mb-6">
-                  CuffWay provides constant pressure monitoring that adjusts based on patient data. The system provides notifications if values set by clinicians are exceeded or fall below safe thresholds.
+                  CuffWay provides constant pressure monitoring that adjusts pressures to patient specific data. The system provides notifications if values set by clinicians are exceeded or fall below safe thresholds.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
@@ -179,47 +179,72 @@ export function Features() {
       {/* How It Works */}
       <section className="relative py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-16">
+          <div className="mx-auto max-w-2xl text-center mb-12">
             <h2 className="text-3xl tracking-tight mb-4 text-white">
               How It Works
             </h2>
             <p className="text-lg text-white/90">
-              Simple integration into existing workflows
+              A seamless workflow from setup to continuous monitoring
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center glass-card rounded-2xl p-8 hover:scale-105 transition-all duration-500 relative overflow-hidden">
-              <div className="absolute inset-0 medical-grid opacity-20"></div>
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full gradient-primary text-white text-3xl font-bold relative z-10">
-                1
+          <div className="glass-strong rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 medical-grid opacity-30"></div>
+            <div className="grid md:grid-cols-5 gap-6 relative z-10">
+              {/* Step 1 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                  1
+                </div>
+                <h3 className="text-lg mb-2 text-white">Seamless Attachment</h3>
+                <p className="text-white/80 text-sm">
+                  Integrates with standard endotracheal tubes
+                </p>
               </div>
-              <h3 className="text-xl mb-3 relative z-10 text-white">Attach to ET Tube</h3>
-              <p className="text-white/90 text-sm relative z-10">
-                Connect the CuffWay device to any standard endotracheal tube
-              </p>
-            </div>
 
-            <div className="text-center glass-card rounded-2xl p-8 hover:scale-105 transition-all duration-500 relative overflow-hidden">
-              <div className="absolute inset-0 medical-grid opacity-20"></div>
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full gradient-primary text-white text-3xl font-bold relative z-10 ecg-line">
-                2
+              {/* Step 2 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                  2
+                </div>
+                <h3 className="text-lg mb-2 text-white">Configure Parameters</h3>
+                <p className="text-white/80 text-sm">
+                  Clinicians set pressure recommendations
+                </p>
               </div>
-              <h3 className="text-xl mb-3 relative z-10 text-white">Monitor in Real-Time</h3>
-              <p className="text-white/90 text-sm relative z-10">
-                The system continuously tracks cuff pressure during the entire procedure
-              </p>
-            </div>
 
-            <div className="text-center glass-card rounded-2xl p-8 hover:scale-105 transition-all duration-500 relative overflow-hidden">
-              <div className="absolute inset-0 medical-grid opacity-20"></div>
-              <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full gradient-primary text-white text-3xl font-bold relative z-10">
-                3
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                  3
+                </div>
+                <h3 className="text-lg mb-2 text-white">Continuous Monitoring</h3>
+                <p className="text-white/80 text-sm">
+                  Real-time pressure tracking begins
+                </p>
               </div>
-              <h3 className="text-xl mb-3 relative z-10 text-white">Receive Alerts</h3>
-              <p className="text-white/90 text-sm relative z-10">
-                Get notified immediately if pressure falls outside safe thresholds
-              </p>
+
+              {/* Step 4 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold ecg-line">
+                  4
+                </div>
+                <h3 className="text-lg mb-2 text-white">Smart Adjustments</h3>
+                <p className="text-white/80 text-sm">
+                  Adjusts pressures to patient specific data
+                </p>
+              </div>
+
+              {/* Step 5 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                  5
+                </div>
+                <h3 className="text-lg mb-2 text-white">Instant Alerts</h3>
+                <p className="text-white/80 text-sm">
+                  Notifications for abnormal pressures
+                </p>
+              </div>
             </div>
           </div>
         </div>

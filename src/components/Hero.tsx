@@ -113,9 +113,9 @@ export function Hero() {
               <div className="text-5xl font-semibold text-white mb-3 relative z-10">
                 $2B+
               </div>
-              <div className="text-lg mb-2 relative z-10 text-white">Estimated Market Value</div>
+              <div className="text-lg mb-2 relative z-10 text-white">Annual Hospital Costs</div>
               <p className="text-sm text-white/80 relative z-10">
-                Total addressable market for CuffWay technology
+                Spent on cuff-related injuries each year
               </p>
             </div>
 
