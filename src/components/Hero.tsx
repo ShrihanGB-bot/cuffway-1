@@ -25,7 +25,7 @@ export function Hero() {
                 <span className="text-accent">Innovative Technology</span>
               </h1>
               <p className="text-xl text-white/90 max-w-2xl lg:mx-0 mx-auto mb-10">
-                CuffWay's innovative medical device provides continuous cuff pressure monitoring to protect patients and empower respiratory therapists during endotracheal intubation.
+                CuffWay's innovative medical device provides continuous cuff pressure monitoring to protect patients and support respiratory therapists during endotracheal intubation.
               </p>
               <div className="flex items-center justify-center lg:justify-start gap-4 flex-wrap">
                 <Button size="lg" asChild className="gradient-primary group">
