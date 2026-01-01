@@ -193,7 +193,7 @@ export function Features() {
             <div className="grid md:grid-cols-5 gap-6 relative z-10">
               {/* Step 1 */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold shrink-0">
                   1
                 </div>
                 <h3 className="text-lg mb-2 text-white">Seamless Attachment</h3>
@@ -204,7 +204,7 @@ export function Features() {
 
               {/* Step 2 */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold shrink-0">
                   2
                 </div>
                 <h3 className="text-lg mb-2 text-white">Configure Parameters</h3>
@@ -215,7 +215,7 @@ export function Features() {
 
               {/* Step 3 */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold shrink-0">
                   3
                 </div>
                 <h3 className="text-lg mb-2 text-white">Continuous Monitoring</h3>
@@ -226,7 +226,7 @@ export function Features() {
 
               {/* Step 4 */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold ecg-line">
+                <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold shrink-0 ecg-line">
                   4
                 </div>
                 <h3 className="text-lg mb-2 text-white">Smart Adjustments</h3>
@@ -237,7 +237,7 @@ export function Features() {
 
               {/* Step 5 */}
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold">
+                <div className="mx-auto mb-4 w-16 h-16 flex items-center justify-center rounded-full gradient-primary text-white text-2xl font-bold shrink-0">
                   5
                 </div>
                 <h3 className="text-lg mb-2 text-white">Instant Alerts</h3>
